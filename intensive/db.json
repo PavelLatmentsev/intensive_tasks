@@ -3,7 +3,7 @@
     {
       "id": "1",
       "login": "alex@gmail.com",
-      "password": "12345"
+      "password": "123456"
     },
     {
       "id": "2",
@@ -19,31 +19,6 @@
       "id": "4",
       "login": "victor@gmail.com",
       "password": "android-20K"
-    },
-    {
-      "login": "nightcharm@mail.ru",
-      "password": "dsadas",
-      "id": 1700043639716
-    },
-    {
-      "login": "dsdsds@dsdad.ru",
-      "password": "dsdsada",
-      "id": 1700048208657
-    },
-    {
-      "login": "artem@gmail.com",
-      "password": "2fdffff",
-      "id": 1700048242126
-    },
-    {
-      "login": "dsds@dsadsa.ry",
-      "password": "dsdadasd",
-      "id": 1700049122571
-    },
-    {
-      "login": "dsasds@mail.ri",
-      "password": "dsadasdad",
-      "id": 1700049554782
     }
   ]
 }
