@@ -5,12 +5,19 @@ import { ILoginForm} from "./LoginForm.interface";
 import { useForm } from "react-hook-form";
 import { API } from "../../../helpers/api";
 import axios from "axios";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { useUserStore } from "../../../store/users.strore";
 
 const LoginForm = () => {
 
     const { register, handleSubmit, formState: { errors }, reset  } = useForm<ILoginForm>();
+    const users = useUserStore(state=> state.users)
+    const fetchUsers = useUserStore(state=> state.fetchUsers)
+    useEffect(() => {
+        fetchUsers()
+    },[fetchUsers])
+    console.log(users)
 	const [error, setError] = useState<string>();
     const navigate = useNavigate()
     const onSubmit = async (formData: ILoginForm) => {
