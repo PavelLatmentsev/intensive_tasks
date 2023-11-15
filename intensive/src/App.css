@@ -1,0 +1,12 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+
+  --color-dark-primery: #090F24;
+  --color-white-primery: #FFF;
+  --color-gray-light:#F4F5F9;
+  --color-gray-second: #B7B8C5;
+  --color-gray-text: #686877;
+}

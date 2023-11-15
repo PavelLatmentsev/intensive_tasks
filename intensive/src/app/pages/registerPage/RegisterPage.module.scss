@@ -1,0 +1,24 @@
+.registerWrapper {
+    height: 450px;
+    width: 550px;
+    background-color: var(--color-gray-light, #F4F5F9);
+    border-radius: 15px;
+}
+
+.register {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 48px;
+    &__title, &__subtitle  {
+        display: inline-block;
+        color: var(--color-dark-primery);
+        font-size: 22px;
+        font-weight: 500;
+        line-height: 139.023%;
+        margin-bottom: 22px;
+    }
+    &__subtitle{
+        margin-bottom: 15px;
+    }
+}
