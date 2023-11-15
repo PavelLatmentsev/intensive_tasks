@@ -3,10 +3,11 @@ import { IButtonProps } from "./Button.props";
 import googleIcon from "/public/images/icons/Google.svg";
 import userIcon from "/public/images/icons/man-user.svg";
 
-export const Button = ({ children,belonging, background, ...props }: IButtonProps): JSX.Element => {
+export const Button = ({ children,belonging, type, background, ...props }: IButtonProps): JSX.Element => {
   return (
     <button
       className={styles.button}
+      type={type}
       {...props}
       style={{backgroundColor:background}}
     >

@@ -6,13 +6,14 @@
 	margin-bottom: 14px;
 	width:100%;
 	box-sizing: border-box;
-	height: 44px;
+	height: 48px;
+	outline: none;
+
     &__error {
         position: absolute;
-        bottom: -20px;
-        left: 0;
-    	border: 1px solid var(--red);
-        color: var(--red);
+        bottom: 28px;
+        right: 15px;
+        color: var( --color-red-error);
     }
 }
 
