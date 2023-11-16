@@ -22,12 +22,11 @@ const LoginForm = () => {
         const data = getOriginalUser(formData, users)
         if (data === "auth") {
             reset();
-            return navigate("/", {replace: true});
+            return navigate("/personal", {replace: true});
         } else {
             setError('Не правильный логин или пароль');
         }
 	};
-
     return ( 
         <>
         {

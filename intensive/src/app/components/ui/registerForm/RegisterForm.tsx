@@ -12,7 +12,6 @@ const RegisterForm = () => {
 	const [error, setError] = useState<string>();
     const users = useUserStore(state=> state.users);
     const addUser = useUserStore(state=>state.addUser)
-    console.log("reg", users)
     const navigate = useNavigate()
     const onSubmit = async (formData: IRegisterForm) => {
 		try {
@@ -20,7 +19,7 @@ const RegisterForm = () => {
 			if (!data) {
               await addUser(formData);
               reset();
-              return navigate("/", {replace: true});
+              return navigate("/personal", {replace: true});
            
 			} else {
 				setError('Такой пользователь уже существует');

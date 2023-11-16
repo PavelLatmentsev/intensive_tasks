@@ -11,11 +11,10 @@ export const useUserStore = create<IUserState>()(immer((set) => ({
     errors: [],
     fetchUsers: async () => {
         const { data } = await axios.get<ILoginForm[]>(API.users.allUsers);
-      set({users:data})
+        set({users:data})
   },
     addUser: (formData: {login: string, password:string}) =>  set(async (state) => {
         const { data } = await axios.post<ILoginForm>(API.users.allUsers, { ...formData, id:Date.now() });
-      state.users.push(data) //изменили на пуш
-      }),
-   
+      state.users.push(data)
+      })
   })));

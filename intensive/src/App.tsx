@@ -3,31 +3,26 @@ import {
   RouterProvider,
   createRoutesFromElements,
   Route,
-  Link,
 } from 'react-router-dom';
-
-
-import './App.css'
-import RegisterPage from './app/pages/registerPage/RegisterPage';
-import LoginPage from './app/pages/loginPage/LoginPage';
 import AuthLayout from './app/layouts/authLayout/authLayout';
 import NotFoundPage from './app/pages/notFoundPage/NotFoundPage';
+import './App.css'
+import AccounPage from './app/pages/accountPage/accountPage';
+import GoogleSignPage from './app/pages/googleSignPage/GoogleSignPage';
 
 function App() {
   const router = createBrowserRouter(
     createRoutesFromElements(
-      <Route path="/">
+      <Route path="/:type?">
         <Route index element={<AuthLayout />} />
        
         <Route
-          path="register"
-          element={<RegisterPage />}
-          handle={{ crumb: () => <Link to="/category">Категории</Link> }}
+          path="personal"
+          element={<AccounPage />}
         />
         <Route
-          path="login"
-          element={<LoginPage />}
-          handle={{ crumb: () => <Link to="/collections">Подборки</Link> }}
+          path="googlesign"
+          element={<GoogleSignPage />}
         />
         <Route path="*" element={<NotFoundPage />} />
       </Route>,
