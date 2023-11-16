@@ -6,9 +6,9 @@ import {
 } from 'react-router-dom';
 import AuthLayout from './app/layouts/authLayout/authLayout';
 import NotFoundPage from './app/pages/notFoundPage/NotFoundPage';
-import './App.css'
 import AccounPage from './app/pages/accountPage/AccountPage';
 import GoogleSignPage from './app/pages/googleSignPage/GoogleSignPage';
+import './App.css'
 
 function App() {
   const router = createBrowserRouter(
