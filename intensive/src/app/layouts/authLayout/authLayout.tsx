@@ -6,7 +6,7 @@ import { Button } from "../../components/common/button/Button";
 import LoginForm from "../../components/ui/loginForm/LoginFrom";
 import RegisterForm from "../../components/ui/registerForm/RegisterForm";
 import userIcon from "../../../assets/images/icons/man-user.svg";
-import styles from "./authLayout.module.scss"
+import styles from "./AuthLayout.module.scss"
 
 const AuthLayout = () => {
 const navigate = useNavigate();
