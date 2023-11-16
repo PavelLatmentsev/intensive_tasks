@@ -12,8 +12,17 @@
     font-weight: 500;
     line-height: 157.023%; 
     background-color:transparent;
+    border: 1px solid var( --color-gray-second);
     cursor: pointer;
+    box-shadow: 0 2px var( --color-gray-second);
     &__picture {
         margin-right: 10px;
     }
 }
+
+.button:active {
+
+    box-shadow: 0 2px var( --color-gray-second);
+    transform: translateY(4px);
+    transition: all 0.1s ease;
+  }

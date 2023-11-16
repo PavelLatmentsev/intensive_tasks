@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
-import { Button } from "../../components/common/button/Button";
 import RegisterForm from "../../components/ui/registerForm/RegisterForm";
 import styles from "./RegisterPage.module.scss"
+import userIcon from "../../../assets/images/icons/man-user.svg";
 const RegisterPage = () => {
     return ( 
         <div className={styles.registerWrapper}>
@@ -9,7 +9,7 @@ const RegisterPage = () => {
         <span className={styles.register__title}>Зарегистрируйтесь, чтобы авторизоваться.</span>
         <RegisterForm/>
         <span className={styles.register__subtitle}>Если у вас есть аккаунт:</span>
-        <Link to={"/login"}><Button belonging="user" background="#74CCD8">Войти</Button></Link>
+        <Link to={"/login"} className={styles.register__link}><img className={styles.register__picture} src={userIcon} alt="userIcon" />Войти</Link>
         </div>
         </div>
      );

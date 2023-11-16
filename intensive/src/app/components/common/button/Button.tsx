@@ -1,7 +1,7 @@
 import styles from "./Button.module.scss";
 import { IButtonProps } from "./Button.props";
-import googleIcon from "/public/images/icons/Google.svg";
-import userIcon from "/public/images/icons/man-user.svg";
+import googleIcon from "/images/icons/Google.svg";
+import userIcon from "/images/icons/man-user.svg";
 
 export const Button = ({ children,belonging, type, background, ...props }: IButtonProps): JSX.Element => {
   return (
