@@ -26,3 +26,10 @@
     transform: translateY(4px);
     transition: all 0.1s ease;
   }
+
+
+  @media (max-width: 576px) {
+    .button {
+        padding: 0;
+    }
+}

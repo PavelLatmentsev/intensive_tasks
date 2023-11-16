@@ -26,7 +26,6 @@
     &__link {
         width: 100%;
         border-radius: 51px;
-        padding: 10px 135px;
         box-sizing: border-box;
         height: 48px;
         display: flex;
@@ -69,7 +68,6 @@
     &__link {
         width: 100%;
         border-radius: 51px;
-        padding: 10px 135px;
         box-sizing: border-box;
         height: 48px;
         display: flex;
@@ -88,3 +86,29 @@
         margin-right: 10px;
     }
 }
+
+@media (max-width: 768px) {
+    .loginWrapper, .registerWrapper {
+      max-width: 500px;
+    }
+  
+  }
+
+  @media (max-width: 576px) {
+    .loginWrapper, .registerWrapper {
+      max-width: 350px;
+    }
+  
+  }
+  @media (max-width: 420px) {
+    .loginWrapper, .registerWrapper {
+      max-width: 240px;
+      height: fit-content;
+      
+      
+    }
+    .login, .register {
+        padding: 34px 20px;
+    }
+  
+  }
