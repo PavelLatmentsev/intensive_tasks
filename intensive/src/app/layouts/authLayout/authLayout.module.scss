@@ -91,12 +91,27 @@
     .loginWrapper, .registerWrapper {
       max-width: 500px;
     }
-  
+    .login, .register {
+        &__title {
+            font-size: 20px;
+        }
+        &__subtitle {
+            font-size: 20px;
+        }
+    }
   }
 
   @media (max-width: 576px) {
     .loginWrapper, .registerWrapper {
       max-width: 350px;
+    }
+    .login, .register {
+        &__title {
+            font-size: 16px;
+        }
+        &__subtitle {
+            font-size: 16px;
+        }
     }
   
   }
@@ -109,6 +124,12 @@
     }
     .login, .register {
         padding: 34px 20px;
+        &__title {
+            font-size: 16px;
+        }
+        &__subtitle {
+            font-size: 16px;
+        }
     }
   
   }

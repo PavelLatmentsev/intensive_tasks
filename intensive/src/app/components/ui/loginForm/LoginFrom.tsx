@@ -33,7 +33,7 @@ const LoginForm = () => {
         error ? <div>{error}</div> : (
             (
                 <form className={styles.loginForm} onSubmit={handleSubmit(onSubmit)}>
-                <Input placeholder="Электронная почта" type="email"	error={errors.login} {...register('login', { required: { value: true, message: 'Заполните email' },  pattern: {
+                <Input placeholder="Email" type="email"	error={errors.login} {...register('login', { required: { value: true, message: 'Заполните email' },  pattern: {
             value: /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,17}$/,
             message: "Пожалуйста, введите корректный email!",
           }  })}/>
